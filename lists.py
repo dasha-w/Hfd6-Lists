@@ -29,6 +29,11 @@ print('list na toevoeging 40 aan het einde van de lijst: ', getallen)  # Het res
 # Verwachte uitkomst: [2, 5, 6, 7, 11, 19, 22]
 # ==========================================
 
+lijst1 = [2,4,7,11,19]
+lijst1.append(22)
+lijst1.insert(2,6)
+lijst1[1]=5
+print(lijst1)
 
 
 # ==========================================
@@ -44,7 +49,17 @@ print('list na toevoeging 40 aan het einde van de lijst: ', getallen)  # Het res
 # Verwachte uitkomst:   [1, 1, 2, 3, 5, 8, 13]
 # ==========================================
 
+fibonacci_reeks = [1,1]
 
+def fibonacci(fibonacci_reeks):
+    fibonacci_reeks.append(fibonacci_reeks[-1] + fibonacci_reeks[-2])
+    return fibonacci_reeks
+
+for i in range(1,6):
+    fibonacci(fibonacci_reeks)
+    print(fibonacci_reeks)
+
+print(f'fibonacci reeks: {fibonacci_reeks}')
 
 # ==========================================
 # Opdracht 3:
@@ -53,7 +68,8 @@ print('list na toevoeging 40 aan het einde van de lijst: ', getallen)  # Het res
 # Verwachte uitkomst:  [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 # ==========================================
 
-
+kwadranten = [getal **2 for getal in range(1,11)]
+print(kwadranten)
 
 
 
